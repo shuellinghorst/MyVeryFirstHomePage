@@ -1,37 +1,26 @@
-Here’s the summary of your approach for the Overview page:
 
----
-
-### **HowTo: Setting Up a Website from Scratch**
-
-**Introduction:**
-- Guide for setting up a modern website using best practices for infrastructure, development, and deployment.
-- Emphasize the use of Git for version control and CI/CD for automated deployment.
-
----
-
-### **Chapter 1: Infrastructure (Git + CI/CD)**
-
-**Step 1: Set Up Git Repository**
-- Create a new Git repository for your website project.
-- Push the code to a remote Git service (e.g., GitHub, GitLab).
-
-**Step 2: Local Development Setup**
-- Set up a local development environment using tools like VS Code.
-- Install dependencies and structure your project using a build tool (e.g., Webpack).
-
-**Step 3: CI/CD Pipeline Setup**
-- Set up a CI/CD pipeline for automatic testing and deployment.
-- Integrate services like GitHub Actions or GitLab CI to deploy on every push to the repository.
-
----
+### Overview of Your Setup:
+- **Tools & Platforms**:
+  - **Visual Studio Code** for code editing.
+  - **Raspberry Pi 5** as the local server.
+  - **Ubuntu Server LTS 22.04** running on the Raspberry Pi.
+  - **PHP 8.3** and **Apache 2** for the web stack.
+  
+- **Web Server Configuration**:
+  - Started with a simple `index.html` file, which is securely accessible through your **DuckDNS** domain.
+  - **HTTPS** secured using **Let's Encrypt**.
+  - **Security Headers** configured via `.htaccess`.
 
 ### Next Steps:
-After completing the infrastructure setup, you'll proceed to:
-- Developing the website.
-- Configuring the deployment pipeline.
-- Adding content and styling.
+1. **Set up Git repository**:
+   - Initialize a Git repository on your Raspberry Pi.
+   - Push your local website code to a remote Git repository (GitHub, GitLab, etc.).
+  
+2. **Set up CI/CD pipeline**:
+   - Use a CI/CD service (e.g., GitHub Actions, GitLab CI, Jenkins) to automate deployment from your Git repository to your Raspberry Pi server.
+   - Automatically push updates from your local repository to your Raspberry Pi when changes are made.
 
----
+3. **Develop Your Website**:
+   - Start working on more pages for your website.
+   - Use Visual Studio Code for developing and pushing changes via Git.
 
-Does this structure work for your Overview page? Let me know if you'd like to make any adjustments!
