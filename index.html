@@ -3,25 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HowTo - Setting up a Website from Scratch</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>SteefSteefsen</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+
 </head>
 <body>
-    <h1>HowTo: Setting up a Website from Scratch</h1>
-    
-    <!-- Display the content of the markdown file -->
-    <div id="markdown-content"></div>
+    <div id="main">
+        <div class="container">
+            
+            <nav>
+                <img src="./src/img/logo.png" alt="logo" class="logo">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><button class="btn btn-secondary" href="#">Login</button></li>
+                </ul>
+                <p class="menu-btn">≡</p>
+            </nav>
+            <div class="main-content">
+                <h1 class="intro-heading">wellcome</h1>
+                <h1 class="main-heading">to my live</h1>
+                <hi class="add-heading">..my world is open for you</hi>
+                <p>
+                    hier
+                    solllsadddsddddddddddddd
+                    asdasdsad
+                    asdasdasddsa
+                    asdasdsadsadsad
+                    asdsadsadsadsadsad
+                    asdsadsadasdasdsadsad
+                </p>
+                <button class="btn btn-primary">Take a dip</button>
 
-    <script>
-        // Load the markdown file and display it as HTML
-        fetch('/markdown_files/chapter_1_HowTo.md')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('markdown-content').innerHTML = marked(data);
-            })
-            .catch(error => {
-                console.error('Error loading the markdown file:', error);
-            });
-    </script>
+            </div>   
+        </div>    
+        <!-- Debug information container -->
+
+   
+    </div>
+
+    <section id="content">
+        <div class="container">
+            <div class="section-title">
+                <h2>..on the menu..</h2>
+                
+                <div class="line"></div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <img src="./src/img/service-1.jpg" alt="">
+                    <h3>Projects</h3>
+                    <p>The small things that bring joy</p>
+                </div>
+                <div class="service">
+                    <img src="./src/img/service-2.jpg" alt="">
+                    <h3>Events</h3>
+                    <p>Nice things to do or see in Berlin and elsewhere</p>
+                </div>
+                <div class="service">
+                    <img src="./src/img/service-3.jpg" alt="">
+                    <h3>HowTo</h3>
+                    <p>Some small things that bring joy in use - less in set up</p>
+                </div>
+                <div class="service">
+                    <img src="./src/img/service-4.jpg" alt="">
+                    <h3>About</h3>
+                    <p>Some more background infos and the way things go</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonial">
+        <div class="container">
+            
+            <h1>"ein sehr tolles Zitat mit dem man andere menschen ärgert"</h1>
+            <div class="profile">
+                <img src="./src/img/profile.jpg" alt="">
+                <h4>SteefSteefsen</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <h4>about me</h4>
+                <h1>Teel them about me</h1>
+                <p>sfsdfsdfsdfdsfdsfdsfdsfsf</p>
+                <button class="btn btn-primary">Let's Talk now</button>
+            </div>
+            <div class="about-image">
+                <img src="./src/img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="questions">
+        <div class="container">
+            <h1>Questions?</h1>
+            <p>dsfdsfdsfdsfdsffds</p>
+            <button class="btn btn-primary">Lets talk now</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <img src="./src/img/Gensor_G.svg" alt="" class="footer-logo">
+        </div>
+    </footer>
+    <script src="src/js/scripts.js"></script>
+
 </body>
 </html>
